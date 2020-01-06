@@ -1,1 +1,9 @@
-<h1>Welcome to my Favorite Citites App</h1>
+<% @cities.each do |city| %>
+  <div>
+    <h1><%= city.name %></h1><br />
+    <i><%= city.address %></i><br />
+    <p><%= city.description %></p><br />
+  </div>
+
+  <hr />
+<% end %>
